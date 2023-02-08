@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html =lang "en">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title> Lab 4 </title>
+  <meta charset="UTF-8">
+  <title> Lab 4 </title>
 </head>
 <body>
-	<h1> Volunteer Form </h1>
-	<form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
-	<fieldset>
-		<legend> My Info </legend>
-		<div>
-			<label for="firstName">First Name:</label> <input type ="text" name="first_name_field" placeholder="first name"> 
-		</div>
-		<div>
-			<label for="lastName">Last Name:</label> <input type="text" name="last_name_field" placeholder="last name">
-		</div>
-		<div>
-			<label for="phoneNumber">Phone Number:</label> <input type="tel" name="phone_field" placeholder="phone number ">
-		</div>
-		<div>
-			<label for="email">Email Address:</label> <input type="email" name="email_field" placeholder="email">
-		<div>
-			<label for="gender">Gender:</label>
+  <h1> Volunteer Form </h1>
+  <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+    <fieldset>
+	  <legend> My Info </legend>
+		
+		<div><label for="firstName">First Name:</label> <input size="100" type ="text" name="first_name_field" placeholder="first name"> </div>
+		
+		<div><label for="lastName">Last Name:</label> <input size ="100" type="text" name="last_name_field" placeholder="last name"></div>
+		
+		<div><label for="phoneNumber">Phone Number:</label> <input size="100" type="tel" name="phone_field" placeholder="phone number "></div>
+		
+		<div><label for="email">Email Address:</label> <input size="100" type="email" name="email_field" placeholder="email">
+		
+		<div><label for="gender">Gender:</label>
 			<label for="Male">Male</label>
 			<input type="radio" name="gender_field">
 			<label for="Female">Female</label>
@@ -43,26 +40,13 @@
 	<fieldset>
 		<h2> Days Available:</h2>
 		<div>
-		<label>
-		  <input type="checkbox" name="available_field[]" value="Sunday">Sunday
-		</label>
-		<label>
-		  <input type="checkbox" name="available_field[]" value="Monday">Monday
-		<label>	
-		  <input type="checkbox" name="available_field[]" value="Tuesday">Tuesday
-		</label>
-		<label>
-			<input type="checkbox" name="available_field[]" value="Wednesday">Wednesday
-		</label>
-		<label>
-			<input type="checkbox" name="available_field[]" value="Thursday">Thursday
-		</label>
-		<label>
-			<input type="checkbox" name="available_field[]" value="Friday">Friday
-		</label>
-		<label>
-			<input type="checkbox" name="available_field[]" value="Saturday">Saturday
-		</label>
+		<label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label>
+		<label><input type="checkbox" name="available_field[]" value="Monday">Monday</label>
+		<label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</label>
+		<label><input type="checkbox" name="available_field[]" value="Wednesday">Wednesday</label>
+		<label><input type="checkbox" name="available_field[]" value="Thursday">Thursday</label>
+		<label><input type="checkbox" name="available_field[]" value="Friday">Friday</label>
+		<label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label>
 		<h2> Any Comments? </h2>
 		<div>
 			<textarea name="comments_field"></textarea>
