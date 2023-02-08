@@ -9,51 +9,43 @@
   <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
     <fieldset>
 	  <legend> My Info </legend>
-		
-		<div><label for="firstName">First Name:</label> <input size="100" type ="text" name="first_name_field" placeholder="first name"> </div>
-		
-		<div><label for="lastName">Last Name:</label> <input size ="100" type="text" name="last_name_field" placeholder="last name"></div>
-		
-		<div><label for="phoneNumber">Phone Number:</label> <input size="100" type="tel" name="phone_field" placeholder="phone number "></div>
-		
-		<div><label for="email">Email Address:</label> <input size="100" type="email" name="email_field" placeholder="email">
-		
-		<div><label for="gender">Gender:</label>
-			<label for="Male">Male</label>
-			<input type="radio" name="gender_field">
-			<label for="Female">Female</label>
-			<input type="radio" name="gender_field">
-		</div>
-		<div>
-		<label for="Age">Age:</label>
-			<select name="age_field" name="age_field">
-			<option value="under 18">under 18</option>
-			<option value="18-24">18-24</option>
-			<option value="25-34">25-34</option>
-			<option value="35-44">35-44</option>
-			<option value="45-54">45-54</option>
-			<option value="55-64">55-64</option>
-			<option value="65 and over">65 and over </option>
-			</select>
+	  <div><label for="firstName">First Name:<input size="100" type ="text" name="first_name_field" placeholder="first name"></label></div>
+	  <div><label for="lastName">Last Name:<input size ="100" type="text" name="last_name_field" placeholder="last name"></label></div>
+	  <div><label for="phoneNumber">Phone Number:<input size="100" type="tel" name="phone_field" placeholder="phone number "></label></div>
+	  <div><label for="email">Email Address:<input size="100" type="email" name="email_field" placeholder="email"></label></div>
+	  <div>Gender:</div>
+	  <div>
+		<label for="Male">Male<input type="radio" name="gender_field"></label>
+		<label for="Female">Female</label><input type="radio" name="gender_field"></label>
+	  </div>
+	  <div>Age:</div>
+		<select name="age_field">
+		  <option value="under 18">under 18</option>
+		  <option value="18-24">18-24</option>
+		  <option value="25-34">25-34</option>
+		  <option value="35-44">35-44</option>
+		  <option value="45-54">45-54</option>
+		  <option value="55-64">55-64</option>
+		  <option value="65 and over">65 and over </option>
+		</select>
 	</fieldset>
-	<h2> My Availability </h2>
 	<fieldset>
-		<h2> Days Available:</h2>
-		<div>
-		<label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label>
-		<label><input type="checkbox" name="available_field[]" value="Monday">Monday</label>
-		<label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</label>
-		<label><input type="checkbox" name="available_field[]" value="Wednesday">Wednesday</label>
-		<label><input type="checkbox" name="available_field[]" value="Thursday">Thursday</label>
-		<label><input type="checkbox" name="available_field[]" value="Friday">Friday</label>
-		<label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label>
-		<h2> Any Comments? </h2>
-		<div>
-			<textarea name="comments_field"></textarea>
-		</div>
+	  <legend> My Availability </legend>
+	  <h3> Days Available:</h3>
+	  <div>
+		<div><label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="Monday">Monday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="Tuesday">Tuesday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="Wednesday">Wednesday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="Thursday">Thursday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="Friday">Friday</label></div>
+		<div><label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label></div>
+		<h3> Any Comments? </h3>
+		<textarea name="comments_field"></textarea>
+	  </div>
 	</fieldset>
-<input type="hidden" name="hidden_field" value=bsamek>
-<input type="submit" value="Send me">
-</form>
-</body>
-</html>
+	<input type="hidden" name="hidden_field" value=bsamek>
+	<input type="submit" value="Send me">
+  </form>
+  </body>
+  </html>
